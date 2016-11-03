@@ -1,0 +1,2 @@
+atom-text-editor:not(.autocomplete-active):not(.mini)':
+  'ctrl-z': 'atomic-emacs:scroll-down'

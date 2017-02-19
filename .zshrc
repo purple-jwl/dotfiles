@@ -43,7 +43,7 @@ autoload -Uz vcs_info
 setopt prompt_subst
 zstyle ':vcs_info:*' formats '%F{green}(%b)%f'
 precmd () { vcs_info }
-RPROMPT='${vcs_info_msg_0_}'$RPROMPT
+RPROMPT='${vcs_info_msg_0_}'
 
 # 補完機能
 autoload -Uz compinit && compinit

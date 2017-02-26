@@ -1,0 +1,25 @@
+"*":
+  "atom-beautify":
+    general:
+      _analyticsUserId: "4daa846f-26e8-4fe4-ba1d-cacc9daff560"
+  core:
+    audioBeep: false
+    packagesWithKeymapsDisabled: []
+    telemetryConsent: "no"
+    themes: [
+      "atom-dark-ui"
+      "atom-dark-syntax"
+    ]
+  editor:
+    invisibles: {}
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+    tabType: "soft"
+  "fuzzy-finder":
+    preserveLastSearch: true
+    searchAllPanes: true
+  "php-cs-fixer":
+    executeOnSave: true
+  welcome:
+    showOnStartup: false

@@ -11,7 +11,9 @@ export LANG=ja_JP.UTF-8
 export PATH=/usr/local/sbin:$PATH
 
 # lsの色設定
-export LSCOLORS=gxfxcxdxbxegedabagacad
+export LSCOLORS='gxfxcxdxbxegedabagacad'
+export LS_COLORS='di=36:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=30;43'
+
 
 # キーバインド
 bindkey -e
@@ -20,7 +22,7 @@ bindkey -e
 setopt notify
 
 # コマンドをtypoした時に聞き直してくれる
-setopt correct
+# setopt correct
 
 # beepを消す
 setopt nolistbeep
@@ -55,7 +57,7 @@ zstyle ':completion:*:warnings' format 'No matches for: %d'
 zstyle ':completion:*' group-name ''
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 zstyle ':completion:*:default' menu select=1
-zstyle ':completion:*:default' list-colors ${(s.:.)LSCOLORS}
+zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 
 # aliases
 alias rm="rm -i"
@@ -68,10 +70,6 @@ alias ll="ls -la"
 
 alias mkdir="mkdir -p"
 alias history="history -f"
-
-alias javac='javac -J-Dfile.encoding=UTF-8'
-alias java='java -Dfile.encoding=UTF-8'
-alias g++='g++ -std=c++0x -O2'
 
 alias ..="cd ../"
 alias ...="cd ../../"

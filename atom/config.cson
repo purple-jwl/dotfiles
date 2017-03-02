@@ -16,6 +16,8 @@
     showInvisibles: true
     softWrap: true
     tabType: "soft"
+  "exception-reporting":
+    userId: "d7666ebe-034b-4aa1-95b2-cbe9cf790b20"
   "fuzzy-finder":
     preserveLastSearch: true
     searchAllPanes: true

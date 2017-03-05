@@ -1,10 +1,11 @@
 ;; flycheckを全拡張子に適応
 (add-hook 'after-init-hook 'global-flycheck-mode)
 
-;; c++-mode (c++11でチェックできるようにする)
-(setq-default flycheck-disabled-checkers '(c/c++-clang))
+;; c++-mode
 (add-hook 'c++-mode-hook
-          (lambda () (setq flycheck-gcc-language-standard "c++11")))
+          (lambda ()
+            (flycheck-select-checker 'c/c++-gcc)
+            (setq flycheck-c/c++-gcc-executable "/usr/local/bin/gcc-6")))
 
 ;; flycheck-color-mode-line-mode
 (eval-after-load "flycheck"

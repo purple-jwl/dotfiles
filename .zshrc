@@ -1,3 +1,4 @@
+# 文字コード
 export LANG=ja_JP.UTF-8
 
 # パス設定
@@ -8,12 +9,15 @@ export LANG=ja_JP.UTF-8
   export PATH=$HOME/.rbenv/bin:$PATH && \
   eval "$(rbenv init -)"
 
+[[ -d ~/.phpenv ]] && \
+  export PATH=$HOME/.phpenv/bin:$PATH && \
+  eval "$(phpenv init -)"
+
 export PATH=/usr/local/sbin:$PATH
 
 # lsの色設定
 export LSCOLORS='gxfxcxdxbxegedabagacad'
 export LS_COLORS='di=36:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=30;43'
-
 
 # キーバインド
 bindkey -e
@@ -69,7 +73,6 @@ alias ls="ls -GF"
 alias ll="ls -la"
 
 alias mkdir="mkdir -p"
-alias history="history -f"
 
 alias ..="cd ../"
 alias ...="cd ../../"

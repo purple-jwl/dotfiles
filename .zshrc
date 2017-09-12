@@ -2,17 +2,6 @@
 export LANG=ja_JP.UTF-8
 
 # パス設定
-[[ -d ~/.nodebrew ]] && \
-  export PATH=$HOME/.nodebrew/current/bin:$PATH
-
-[[ -d ~/.rbenv ]] && \
-  export PATH=$HOME/.rbenv/bin:$PATH && \
-  eval "$(rbenv init -)"
-
-[[ -d ~/.phpenv ]] && \
-  export PATH=$HOME/.phpenv/bin:$PATH && \
-  eval "$(phpenv init -)"
-
 export PATH=/usr/local/sbin:$PATH
 
 # lsの色設定

@@ -79,3 +79,11 @@ alias ...="cd ../../"
 alias ....="cd ../../../"
 alias .....="cd ../../../../"
 alias ......="cd ../../../../../"
+
+function peco-select-history() {
+    BUFFER=$(history -nr 1 | awk '!a[$0]++' | peco --query "$LBUFFER")
+    CURSOR=$#BUFFER
+    # zle clear-screen
+}
+zle -N peco-select-history # 関数をwidgetに登録
+bindkey '^r' peco-select-history

@@ -69,6 +69,8 @@ alias ....="cd ../../../"
 alias .....="cd ../../../../"
 alias ......="cd ../../../../../"
 
+alias gh='cd $(ghq root)/$(ghq list | peco)'
+
 function peco-select-history() {
     BUFFER=$(history -nr 1 | awk '!a[$0]++' | peco --query "$LBUFFER")
     CURSOR=$#BUFFER

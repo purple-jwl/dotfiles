@@ -69,6 +69,8 @@ alias ....="cd ../../../"
 alias .....="cd ../../../../"
 alias ......="cd ../../../../../"
 
+alias g='git'
+
 alias gh='cd $(ghq root)/$(ghq list | peco)'
 
 function peco-select-history() {

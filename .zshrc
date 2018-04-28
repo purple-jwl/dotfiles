@@ -32,10 +32,11 @@ setopt auto_pushd
 
 # 履歴
 HISTFILE=~/.zsh_history
-HISTSIZE=10000
-SAVEHIST=10000
+HISTSIZE=100000
+SAVEHIST=100000
 setopt extended_history
 setopt share_history
+setopt hist_ignore_space
 
 # プロンプト設定
 PROMPT="%F{magenta}[%~]%f "

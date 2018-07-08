@@ -20,3 +20,6 @@
   l = log --graph
   ls = log --graph --stat
   st = status
+
+[ghq]
+  root = ~/workspace

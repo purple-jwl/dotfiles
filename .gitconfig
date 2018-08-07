@@ -11,7 +11,7 @@
   ui = auto
 
 [alias]
-  br = branch -va
+  br = branch -v
   ci = commit
   co = checkout
   d = diff

@@ -35,15 +35,13 @@ setopt extended_history
 setopt share_history
 setopt hist_ignore_space
 
-# プロンプト設定
-PROMPT="%F{magenta}[%~]%f "
-
-# git branch
+# プロンプト設定（ブランチ名も表示する）
 autoload -Uz vcs_info
 setopt prompt_subst
 zstyle ':vcs_info:*' formats '%F{green}(%b)%f'
 precmd () { vcs_info }
-RPROMPT='${vcs_info_msg_0_}'
+PROMPT='%F{magenta}[%~]%f ${vcs_info_msg_0_}
+%B%F{magenta}〉%f%b'
 
 # 補完機能
 autoload -Uz compinit && compinit

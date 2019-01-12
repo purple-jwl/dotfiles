@@ -21,9 +21,6 @@ bindkey -e
 # バックグラウンドジョブの状態変化を即時報告
 setopt notify
 
-# コマンドをtypoした時に聞き直してくれる
-# setopt correct
-
 # beepを消す
 setopt nolistbeep
 
@@ -81,10 +78,12 @@ alias g='git'
 
 alias gh='cd $(ghq root)/$(ghq list | peco)'
 
+alias dc='docker-compose'
+
+# historyからコマンドを選択できるようにする
 function peco-select-history() {
     BUFFER=$(history -nr 1 | awk '!a[$0]++' | peco --query "$LBUFFER")
     CURSOR=$#BUFFER
-    # zle clear-screen
 }
 zle -N peco-select-history # 関数をwidgetに登録
 bindkey '^r' peco-select-history

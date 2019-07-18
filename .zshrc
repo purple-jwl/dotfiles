@@ -41,7 +41,7 @@ setopt prompt_subst
 zstyle ':vcs_info:*' formats '%F{green}(%b)%f'
 precmd () { vcs_info }
 PROMPT='%F{magenta}[%~]%f ${vcs_info_msg_0_}
-%B%F{magenta}〉%f%b'
+%B%F{magenta}$ %f%b'
 
 # 補完機能
 autoload -Uz compinit && compinit

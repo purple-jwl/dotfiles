@@ -73,6 +73,7 @@ alias .....="cd ../../../../"
 alias ......="cd ../../../../../"
 
 alias g='git'
+alias gg='git grep'
 
 alias gh='cd $(ghq root)/$(ghq list | peco)'
 

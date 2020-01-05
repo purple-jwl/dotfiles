@@ -2,7 +2,7 @@
 
 cd ~/
 
-ln -s dotfiles/.emacs.d
+ln -s dotfiles/.emacs.el
 ln -s dotfiles/.editorconfig
 ln -s dotfiles/.gitconfig
 ln -s dotfiles/.gitignore
